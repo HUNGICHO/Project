@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <title>The Project</title>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	
+	<script src="music.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/modernizr.custom.js"></script>
+	
+	
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+
+   <script>var _gaq=[['_setAccount','UA-20257902-1'],['_trackPageview']];
+   (function(d,t){
+	   var g=d.createElement(t),s=d.getElementsByTagName(t)[0]; g.async=1;g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))
+	</script>
+    <script src="assets/js/audio.min.js"></script>
+    
+    <script>
+      audiojs.events.ready(function() {
+        audiojs.createAll();
+      });
+    </script>
+
+  </head>
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+		
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a href="index.html#home">Hun's</a></h1>
+			<i class="icon-remove menu-close"></i>
+			<a href="#home" class="smoothScroll">Home</a>
+			<a href="#about" class="smoothScroll">About</a>
+			<a href="#portfolio" class="smoothScroll">Picture</a>
+			<a href="#contact" class="smoothScroll">Contact</a>
+			<a href="Mboard/Login.jsp" onClick="window.open(this.href, '', 'width=900, height=800'); return false;" class="smoothScroll">MBoard</a>
+			<a href="https://www.facebook.com/hungi.cho" target="_blank"><i class="icon-facebook"></i></a>
+			<a href="#"><i class="icon-twitter"></i></a>
+			<a href="#"><i class="icon-dribbble"></i></a>
+			<a href=""><i class="icon-envelope"></i></a>
+		</div>
+		
+<div id="menuToggle"><i class="icon-reorder"></i></div>
+	</nav>
+	<section id="home" name="home"></section>	
+	<div id="headerwrap">
+	<audio src="assets/TT.mp3" preload="auto" ></audio>
+		<div class="container">
+			<div class="logo">
+				<img src="assets/img/logo.png">
+			</div>
+			<br>
+			<div class="row">
+				<h1>Hun's Project</h1>
+				<br>
+				<h3>Hello, Thank you for coming!</h3>
+				<br/>
+				<br/>
+			</div>
+		</div>
+	</div>
+	
+
+	<section id="about" name="about"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<h3>ABOUT ME</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+				
+				<div class="">
+				<img src="assets/img/pro.png"><br/><br/>
+					<p>조훈기(Hun-Gi Cho).</p>
+					<embed src="TT.mp3" width="40" height="20" loop="-1" 
+					autostart="true" volume="100%" hidden="ture" ></embed>
+					<p>1989.09.27 경상남도 창원.</p>
+					<p>2008.02월 김해대청고등학교 졸업</p>
+					<p>2008.03월 배재대학교 정보통신공학과 입학 </p>
+					<p><button type="button" class="btn btn-warning" onclick="location.href='index.html#home'">자세히 보기!</button></p>
+				</div>								
+			</div>
+		</div>
+	</div>
+	
+	<section id="portfolio" name="portfolio"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<h3>PICTURE</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+				
+				<div class="col-lg-6 col-lg-offset-3">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						
+						<div class="carousel-inner">
+							<div class="item active centered">
+								<img src="assets/img/my1.png" alt="">
+							</div>
+							<div class="item centered">
+								<img src="assets/img/my2.png" alt="">
+							</div>
+							<div class="item centered">
+								<img src="assets/img/my3.png" alt="">
+							</div>
+						</div>
+						<br>
+						<br>
+						<br>
+						<br>
+						<ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="contact" name="contact"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row">
+				<h3>CONTACT ME</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+				
+				<div class="col-lg-6 col-lg-offset-3">
+					<p>Hun-gi. Cho, Korea<br/>
+					<p>H.P : 010-7151-1938</p><br/>
+					<p>Email: hun9812@gmail.com</p><br/>
+					<p><a href="https://www.facebook.com/hungi.cho">Facebook</p></a>
+					<p><button type="button" class="btn btn-warning">CONTACT ME!</button></p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/js/classie.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
